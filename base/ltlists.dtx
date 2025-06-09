@@ -1157,7 +1157,7 @@
 % \changes{v1.0g}{1995/05/17}{Use \cs{thr@@} and remove surplus braces}
 %    \begin{macrocode}
 \def\enumerate{%
-  \ifnum \@enumdepth >\thr@@\@toodeep\else
+  \ifnum \@enumdepth >6\@toodeep\else
     \advance\@enumdepth\@ne
     \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
 %    \end{macrocode}
